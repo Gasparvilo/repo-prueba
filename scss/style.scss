@@ -8,11 +8,13 @@
     box-sizing: border-box;
 }
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;700&family=Poppins&display=swap');
+@import "../variables";
+@import "../scss/mixins";
 
 /* NAVBAR */
 .navbar-brand{
     font-size: 40px;
-    color: rgb(255, 255, 255);
+    color: $colorwit;
     margin-left: 0.5rem;
 }
 
@@ -25,7 +27,7 @@
 }
 .nav-link{
     text-decoration: none;
-    color: rgb(255, 255, 255);
+    color: $colorwit;
     font-size: 18px;
     margin: 5px;
 }
@@ -47,59 +49,7 @@
 }
 
 
-.logo{ 
-    color: rgb(190, 214, 55); 
-font-size: 50px;
-}
 
-
-
-
-
-p{
-    margin: 20px;
-    }
-
-
-.productos{ 
-    margin: 50px ;
-font-size: 30px;
-border: 3px solid rgb(255, 255, 255);
-border-radius: 50px;
-padding: 10px;
-}
-
-
-.productos:hover{ 
-    background-color: crimson;
-}
-
-
-.uno{ 
-    border-bottom: 2px solid rgb(221, 221, 221);
-margin-bottom: 10px;
-}
-
-
-
-
-
-
-
-.titulopromo{ 
-    font-size: 20px;
-margin: 20px;
-color: azure;
-display: flex;
-text-align: center;
-} 
-
-
-
-
-.aproductos:hover{ 
-    background-color: rgb(24, 83, 42);
-}
 
 
 
@@ -117,7 +67,7 @@ text-align: center;
 }
 .saber-mas-footer{
     text-decoration: none;
-    color: red;
+    
     font-size: 30px;
     text-align: center;
 }
@@ -304,99 +254,10 @@ h5{
 
     
 
-.pedido{
-    border: 1px solid black;
-    border-radius: 50px;
-    font-size: 30px;
-    margin-left: 50px;
-    margin-top: 10px;
-    background-color: rgb(17, 102, 43);
-    padding: 5px;
-    color: aliceblue;
-    text-decoration: none;
-}
-
-
-.pedido:hover{ 
-    background-color: rgb(22, 77, 11);
-}
-
-
-/* CARRUSEL */
 
 
 
-// .conteItemsCarrusel{
-//     border: 2px solid black;
-//     border-radius: 20px;
-//     height: 550px;
-//     width: 400px;
-//     overflow: hidden;
-// }
 
-
-// .itemcarrusel{
-    
-//     height: 550px;
-//     position: relative;
-// }
-
-// .tarjetacarrusel{
-//     height: 100%;
-// }
-// .imagencarrusel1{
-//     display: flex;
-//     align-items: center;
-//     justify-content: center;
-// height: 560px;
-// }
-// .imagencarrusel2{
-//     display: flex;
-//     align-items: center;
-//     justify-content: center;
-// height: 530px;
-// }
-
-
-// .flechacarrusel{
-    
-//     height: 100%;
-//     position: absolute;
-//     top: 0;
-//     width: 100%;
-//     display: flex;
-//     align-items: center;
-//     justify-content:space-between;
-//     padding: 20px;
-// }
-
-// .tarjetacarrusel1{
-//     background-image: url();
-//     background-repeat: no-repeat;
-//     height: 100vh;
-//     background-position: center;
-//     background-size:cover ;
-//     background-attachment:inherit;
-// }
-// .tarjetacarrusel2{
-//     background-image: url();
-//     background-repeat: no-repeat;
-//     background-size: cover;
-//     background-position: center;
-//     height: 100vh;
-//     background-attachment:inherit;
-// }
-// .tarjetacarrusel3{
-//     background-image: url();
-//     background-repeat: no-repeat;
-//     background-size: cover;
-//     background-position: center;
-//     height: 100vh;
-// }
-
-// .flechassub{
-//     text-decoration: none;
-// }
 /* CARDS */
 :root {
     --surface-color: #fff;
@@ -407,10 +268,7 @@ h5{
     box-sizing: border-box;
   }
   
-  body {
-    font-family: 'Noto Sans JP', sans-serif;
-    background-color: #fef8f8;
-  }
+  
   
   .cards {
     display: grid;
@@ -464,8 +322,7 @@ h5{
   }
   
   .card__arc {
-    width: 80px;
-    height: 80px;
+    @include wh80px;
     position: absolute;
     bottom: 100%;
     right: 0;      
@@ -547,8 +404,7 @@ h5{
 
 
 .quienessomos-p{ 
-    font-size: 20px;
-    color: rgb(255, 255, 255);
+    @include quienessomos;
 }
 
 
@@ -556,8 +412,8 @@ h5{
 
 
 .nombres{
-    margin-left: 20px;
-    color: rgb(255, 255, 255);
+    
+  @include quienessomos;
     font-size: 20px;
 }
 
@@ -588,9 +444,7 @@ color: rgb(255, 255, 255);
 }
 
 /* GRID DE PRODUCTOS */
-.titulo-promociones{
-    color: white;
-}
+
 
 .productos-titulos{
 margin-left: 80px;
@@ -635,9 +489,7 @@ margin-left: 80px;
 
 .card__overlay {
   position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0;
+  @include nada;
   z-index: 1;      
   border-radius: calc(var(--curve) * 1px);    
   background-color: var(--surface-color);      
@@ -662,8 +514,7 @@ margin-left: 80px;
 }
 
 .card__arc {
-  width: 80px;
-  height: 80px;
+  @include wh80px;
   position: absolute;
   bottom: 100%;
   right: 0;      
@@ -721,18 +572,6 @@ margin-left: 80px;
 
 
 
-.titulo-promociones{
-    color: crimson;
-    font-size: 50px;
-    margin: 20px;
-
-}
-
-
-
-
-
-
 
 
 
@@ -759,8 +598,7 @@ margin-left: 80px;
 @media (max-width: 456px){
     
 .navbar-brand{
-    font-size: 16px;
-    color: rgb(255, 255, 255);
+    @include quienessomos;
 }
 }
 
@@ -772,7 +610,7 @@ margin-left: 80px;
 
             .registro1{
                 width: 400px;
-                background-color: rgba(0, 0, 0, 0.411);
+                background-color: $registrocolor;
                 padding: 30px;
                 margin: auto;
                 margin-top: 50px;
@@ -790,11 +628,11 @@ margin-left: 80px;
                 
                 .control2{
                     width: 100%;
-                    background-color: rgba(0, 0, 0, 0.411);
+                    background-color: $registrocolor;
                     padding: 10px;
                     border-radius: 4px;
                     margin-bottom: 16px;
-                    border: 1px solid rgba(0, 0, 0, 0.411);
+                    border: 1px solid $registrocolor;
                     font-family: 'Times New Roman', Times, serif;
                     font-size: 18px;
                 }
@@ -883,8 +721,6 @@ margin-left: 80px;
                 }
                 // Settings
 
-$c_0: #000000;
-$c_1: #353540;
 
 // Basic reset
 

@@ -40,37 +40,6 @@
   height: 100vh;
   font-family: 'Oswald', sans-serif; }
 
-.logo {
-  color: #bed637;
-  font-size: 50px; }
-
-p {
-  margin: 20px; }
-
-.productos {
-  margin: 50px;
-  font-size: 30px;
-  border: 3px solid white;
-  border-radius: 50px;
-  padding: 10px; }
-
-.productos:hover {
-  background-color: crimson; }
-
-.uno {
-  border-bottom: 2px solid #dddddd;
-  margin-bottom: 10px; }
-
-.titulopromo {
-  font-size: 20px;
-  margin: 20px;
-  color: azure;
-  display: flex;
-  text-align: center; }
-
-.aproductos:hover {
-  background-color: #18532a; }
-
 /* FOTTER */
 .site-footer {
   background-color: #26272b;
@@ -81,7 +50,6 @@ p {
 
 .saber-mas-footer {
   text-decoration: none;
-  color: red;
   font-size: 30px;
   text-align: center; }
 
@@ -224,21 +192,6 @@ h5 {
   font-size: 15px;
   color: aliceblue; }
 
-.pedido {
-  border: 1px solid black;
-  border-radius: 50px;
-  font-size: 30px;
-  margin-left: 50px;
-  margin-top: 10px;
-  background-color: #11662b;
-  padding: 5px;
-  color: aliceblue;
-  text-decoration: none; }
-
-.pedido:hover {
-  background-color: #164d0b; }
-
-/* CARRUSEL */
 /* CARDS */
 :root {
   --surface-color: #fff;
@@ -246,10 +199,6 @@ h5 {
 
 * {
   box-sizing: border-box; }
-
-body {
-  font-family: 'Noto Sans JP', sans-serif;
-  background-color: #fef8f8; }
 
 .cards {
   display: grid;
@@ -366,7 +315,7 @@ body {
   color: white; }
 
 .nombres {
-  margin-left: 20px;
+  font-size: 20px;
   color: white;
   font-size: 20px; }
 
@@ -388,9 +337,6 @@ h6 {
   height: 100vh; }
 
 /* GRID DE PRODUCTOS */
-.titulo-promociones {
-  color: white; }
-
 .productos-titulos {
   margin-left: 80px; }
 
@@ -497,11 +443,6 @@ h6 {
   -webkit-line-clamp: 3;
   overflow: hidden; }
 
-.titulo-promociones {
-  color: crimson;
-  font-size: 50px;
-  margin: 20px; }
-
 /* GRID INDEX */
 @media (max-width: 1200px) {
   .navbar-brand {
@@ -510,7 +451,7 @@ h6 {
 
 @media (max-width: 456px) {
   .navbar-brand {
-    font-size: 16px;
+    font-size: 20px;
     color: white; } }
 
 /* FORMULARIO */
