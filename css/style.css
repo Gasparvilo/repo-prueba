@@ -44,13 +44,13 @@
 .site-footer {
   background-color: #26272b;
   padding: 45px 0 20px;
-  font-size: 15px;
+  font-size: 13px;
   line-height: 24px;
   color: #737373; }
 
 .saber-mas-footer {
   text-decoration: none;
-  font-size: 30px;
+  font-size: 25px;
   text-align: center; }
 
 .saber-mas-footer-p {
@@ -58,7 +58,7 @@
   justify-content: center;
   border: 1px solid white;
   border-radius: 20px;
-  padding: 20px; }
+  padding: 10px; }
 
 .site-footer hr {
   border-top-color: #bbb;
@@ -312,14 +312,17 @@ h5 {
 
 .quienessomos-p {
   font-size: 20px;
-  color: white; }
+  color: white;
+  padding: 30px; }
 
 .nombres {
   font-size: 20px;
   color: white;
-  font-size: 20px; }
+  font-size: 20px;
+  padding: 30px; }
 
 h6 {
+  padding: 30px;
   font-size: 30px;
   margin: 10px;
   color: white; }
@@ -327,7 +330,7 @@ h6 {
 .grid-container-quines-somos div {
   border: solid 1px black;
   background-color: black;
-  border-radius: 50px; }
+  border-radius: 10px; }
 
 .item-2-quienessomos {
   background-image: url(https://cdn.discordapp.com/attachments/556970734501494806/968702079499649074/unknown.png);
