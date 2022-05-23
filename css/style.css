@@ -27,11 +27,6 @@
   font-size: 18px;
   margin: 5px; }
 
-.nav-link:hover {
-  text-decoration: none;
-  background-color: #dc8d55;
-  border-radius: 30px; }
-
 .fondo {
   background-repeat: no-repeat;
   background-size: cover;
@@ -295,6 +290,13 @@ h5 {
   text-align: center;
   font-size: 30px; }
 
+@media (max-width: 500px) {
+  .index-promociones {
+    text-align: center;
+    font-size: 40px;
+    color: #000;
+    text-shadow: 3px 3px 3px white; } }
+
 /* GRID DE QUIENES SOMOS */
 .grid-container-quines-somos {
   display: grid;
@@ -305,6 +307,15 @@ h5 {
   margin: 0 auto;
   grid-auto-flow: dense;
   max-width: 92rem; }
+
+@media (max-width: 622px) {
+  .grid-container-quines-somos {
+    display: grid;
+    grid-template-columns: repeat(1, minmax(400px, auto));
+    grid-auto-rows: minmax(400px, auto);
+    gap: 20px;
+    grid-auto-flow: dense;
+    max-width: 92rem; } }
 
 .quienessomos-p {
   font-size: 20px;

@@ -33,9 +33,7 @@
 }
 
 .nav-link:hover{
-    text-decoration: none;
-    background-color: rgb(220, 141, 85);
-    border-radius: 30px;
+
 }
 
 
@@ -379,10 +377,19 @@ h5{
       text-shadow: 3px 3px 3px white;
   }
 
+
   .card-title{
       color: #000;
       text-align: center;
       font-size: 30px;
+  }
+  @media(max-width: 500px){
+    .index-promociones{
+      text-align: center;
+      font-size: 40px;
+      color: #000;
+      text-shadow: 3px 3px 3px white;
+  }
   }
 
 
@@ -404,7 +411,18 @@ h5{
     grid-auto-flow: dense;
     max-width: 92rem;
 }
-
+@media(max-width: 622px){
+  .grid-container-quines-somos{
+    display: grid;
+    grid-template-columns: repeat(1, minmax(400px, auto));
+    grid-auto-rows: minmax(400px, auto);
+    gap: 20px;
+    
+    
+    grid-auto-flow: dense;
+    max-width: 92rem;
+}
+ }
 
 
 .quienessomos-p{ 
