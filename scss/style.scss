@@ -277,7 +277,7 @@ h5{
     list-style-type: none;
   }
   
-  .card {
+  .card2 {
     position: relative;
     display: block;
     height: 100%;  
@@ -390,6 +390,7 @@ h5{
       color: #000;
       text-shadow: 3px 3px 3px white;
   }
+  
   }
 
 
@@ -430,6 +431,22 @@ h5{
     padding: 30px
 }
 
+@media(max-width:446px){
+  .quienessomos-p{ 
+    font-size: 15px;
+    padding: 10px
+}
+.grid-container-quines-somos{
+  display: grid;
+  grid-template-columns: repeat(1, minmax(300px, auto));
+  grid-auto-rows: minmax(300px, auto);
+  gap: 10px;
+  padding: 0;
+  margin:0;
+  grid-auto-flow: dense;
+  max-width: 92rem;
+}
+}
 
 
 
@@ -464,9 +481,8 @@ color: rgb(255, 255, 255);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    height: 100vh;
+    height: 40vh;
 }
-
 
 
 
@@ -493,17 +509,60 @@ margin-left: 80px;
     text-align: center;
     
 }
+@media(max-width:446px){
+  .titulo-promo{
+    font-size: 50px;
+    margin: 20px;
+    color: rgb(255, 255, 255);
+    text-shadow: 2px 2px 2px black;
+    text-align: center;
+    
+}
+}
+
 .mix-3{
     display: flex;
     justify-content: space-between;
 }
-.cards {
+.cards1 {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   gap: 2rem;
   margin: 4rem 5vw;
   padding: 0;
   list-style-type: none;
+}
+@media(max-width:500px){
+  .cards1 {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+    
+    gap: 5px;
+    margin: 0;
+    margin-top: 60px;
+    margin-bottom: 60px;
+    padding: 0;
+    list-style-type: none;
+  }
+
+  .card__header {
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 1px;
+    padding: 1px;
+    border-radius: calc(var(--curve) * 1px) 0 0 0;    
+    background-color: var(--surface-color);
+    transform: translateY(-100%);
+    transition: .2s ease-in-out;
+  }
+  .card__title {
+    font-size: 10px;
+    margin:0;
+    color: #6A515E;
+  }
+  
+  
 }
 
 .card {
@@ -699,10 +758,11 @@ margin-left: 80px;
                     justify-content: center;
                     align-items: center;
                     background-image:url(../img/berke-can-at7Xfh_6TEM-unsplash.jpg);
-                    background-size: cover;
+                    background-size: auto cover;
                     background-repeat: no-repeat;
-                    background-position: center;
+                    background-position: right;
                     height: 50vh;
+                    
                     &__titulo{
                     color: rgb(255, 255, 255);
                     text-align: center;
@@ -751,6 +811,40 @@ margin-left: 80px;
                     text-decoration: none;
                     color: white;
                 }
+
+                @media(max-width:670px){
+                  .hero{
+                    height: 20vh;
+                    
+                    &__titulo{
+
+                    font-size: 1rem;
+                    text-shadow: 1px 1px 1px black;
+                    }
+                }
+                .hero2{
+                  display: flex;
+                  flex-direction: column;
+                  justify-content: end;
+                  align-items: flex-end;
+                  background-color: rgb(24, 29, 24);
+                  background-size: cover;
+                  background-repeat: no-repeat;
+                  background-position: center;
+                  border: 2px  solid #000;
+                  
+                  box-shadow: 5px 5px 5px rgb(47, 68, 63);
+                  height: 10vh;
+                  &__titulo{
+                  color: rgb(255, 255, 255);
+                  text-align: end;
+                  font-size: 25px;
+                  text-shadow: 1px 1px 1px black;
+                  margin-right: 20px;
+                  }
+              }
+                }
+                
                 // Settings
 
 
@@ -774,6 +868,23 @@ margin-left: 80px;
   }
   
 }
+@media(max-width:542px){
+  .l-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 20px;
+    width: 100%;
+    max-width: 100%;
+    padding: 10px;
+    
+    
+    @media screen and (max-width: 760px) {
+      grid-template-columns: repeat(2, 1fr);
+    }
+    
+  }
+}
+
 
 .b-game-card {
   position: relative;
