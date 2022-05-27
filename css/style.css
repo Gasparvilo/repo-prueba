@@ -629,9 +629,14 @@ h6 {
     .hero2__titulo {
       color: white;
       text-align: end;
-      font-size: 25px;
+      font-size: 20px;
       text-shadow: 1px 1px 1px black;
-      margin-right: 20px; } }
+      margin-right: 20px; }
+  .p-a {
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-right: 50px;
+    font-size: 10px; } }
 
 .l-container {
   display: grid;
