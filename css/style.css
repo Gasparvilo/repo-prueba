@@ -269,16 +269,6 @@ h5 {
   font-size: .8em;
   color: #D7BDCA; }
 
-.card__description {
-  padding: 0 2em 2em;
-  margin: 0;
-  color: #D7BDCA;
-  font-family: "MockFlowFont";
-  display: -webkit-box;
-  -webkit-box-orient: vertical;
-  -webkit-line-clamp: 3;
-  overflow: hidden; }
-
 .index-promociones {
   text-align: center;
   font-size: 70px;
